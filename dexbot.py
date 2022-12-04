@@ -44,5 +44,7 @@ async def search(interaction: discord.Interaction, name: str):
 
     await interaction.response.send_message(embed=embed)
 
-bot.run('MTA0ODMzNDUyODAyNTk5MzM0Nw.G-RCXu.1tbhHRQWqGxGgnhODIAWSYqzlPJmCixzVErQsA')
+file = open('bot_token.txt')
+
+bot.run(file.readline())
 
